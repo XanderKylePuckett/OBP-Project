@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Game">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABAAAIAQAAAAAEAiAAAAEoBAAAQAAAAA=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseState">
+    <Position X="3.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAABAAAAAAAAAAAAQAAEAAEAAAAIBACAAAAAAA=</HashCode>
+      <FileName>BaseState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameState">
+    <Position X="6.25" Y="0.5" Width="1.75" />
+    <InheritanceLine Type="BaseState" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="0.812" />
+        <Point X="6.25" Y="0.812" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>gQQAAAAAAAAAAAAAAgAAAAAAEQgEAAAAIBACAIAAIAA=</HashCode>
+      <FileName>GameState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseObject">
+    <Position X="9" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQCACIAAIAgAAYIQYAgQABgEAAGAAAIYBBgAEQAIAA=</HashCode>
+      <FileName>BaseObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy">
+    <Position X="12" Y="5.25" Width="2" />
+    <InheritanceLine Type="BaseObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.25" Y="0.938" />
+        <Point X="11.927" Y="0.938" />
+        <Point X="11.927" Y="5.562" />
+        <Point X="12" Y="5.562" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AgQAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player">
+    <Position X="12" Y="0.5" Width="2" />
+    <InheritanceLine Type="BaseObject" FixedToPoint="true">
+      <Path>
+        <Point X="11.25" Y="0.812" />
+        <Point X="12" Y="0.812" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>CAQAAAABECAAAAAAAAAIAAAAEAAEAAAAABggwQAABBA=</HashCode>
+      <FileName>Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuState">
+    <Position X="6.25" Y="4.5" Width="1.75" />
+    <InheritanceLine Type="BaseState" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="0.938" />
+        <Point X="6.177" Y="0.938" />
+        <Point X="6.177" Y="4.812" />
+        <Point X="6.25" Y="4.812" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.133" Y="0.058" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAAAAAAAAAAgAQAAAAEAAEACBAIFACAAAAAAA=</HashCode>
+      <FileName>MenuState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
