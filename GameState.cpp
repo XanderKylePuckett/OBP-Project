@@ -138,19 +138,19 @@ void GameState::Exit( void )
 	Player* p = dynamic_cast< Player* >( objects[ 0 ] );
 
 	System::Console::SetCursorPosition( ( System::Console::WindowWidth() >> 1 ) - 8,
-										( System::Console::WindowHeight() >> 1 ) - 3 );
+		( System::Console::WindowHeight() >> 1 ) - 3 );
 	std::cout << "Game Over";
 
 	System::Console::SetCursorPosition( ( System::Console::WindowWidth() >> 1 ) - 8,
-										( System::Console::WindowHeight() >> 1 ) - 1 );
+		( System::Console::WindowHeight() >> 1 ) - 1 );
 	std::cout << "Player: " << p->GetName();
 
 	System::Console::SetCursorPosition( ( System::Console::WindowWidth() >> 1 ) - 8,
-										( System::Console::WindowHeight() >> 1 ) );
+		( System::Console::WindowHeight() >> 1 ) );
 	std::cout << "Score: " << p->GetScore();
 
 	System::Console::SetCursorPosition( ( System::Console::WindowWidth() >> 1 ) - 8,
-										( System::Console::WindowHeight() >> 1 ) + 1 );
+		( System::Console::WindowHeight() >> 1 ) + 1 );
 	std::cout << "Difficulty: " << p->GetDifficulty();
 
 
@@ -235,7 +235,7 @@ void GameState::Choose()
 				fin.ignore( INT_MAX, '\n' );
 
 				fileObjects[ i ] = new BaseObject( BaseObject::ToCells( buffer,
-												   ( System::ConsoleColor )fg,
+					( System::ConsoleColor )fg,
 												   ( System::ConsoleColor )bg ) );
 
 				fileObjects[ i ]->SetX( ( System::Console::WindowWidth() >> 1 )
@@ -298,7 +298,7 @@ void GameState::Choose()
 																		System::Console::WindowHeight() >> 1 );
 									std::cout << "ENTER NAME:";
 									System::Console::SetCursorPosition( ( System::Console::WindowWidth() >> 1 ) - 10,
-																		( System::Console::WindowHeight() >> 1 ) + 2 );
+										( System::Console::WindowHeight() >> 1 ) + 2 );
 									System::Console::CursorVisible( true );
 									System::Console::FlushKeys();
 									System::Console::Lock( false );

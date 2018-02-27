@@ -154,7 +154,7 @@ bool BaseObject::Collides( Direction _dir, int _vel ) const
 			if ( this == objects[ i ] || Obj_Missile == objects[ i ]->GetObjectID() ) // ignore self collision and missile collision
 				continue;
 			else if ( ( Game::GetCheats() & CHEAT_DISABLE_ENEMY_COLLISION ) &&
-					  ( ( Obj_Player == this->GetObjectID() && Obj_Enemy == objects[ i ]->GetObjectID() ) ||
+				( ( Obj_Player == this->GetObjectID() && Obj_Enemy == objects[ i ]->GetObjectID() ) ||
 					  ( Obj_Enemy == this->GetObjectID() && Obj_Player == objects[ i ]->GetObjectID() ) ) )
 				continue;
 			else if ( !(
@@ -173,7 +173,7 @@ bool BaseObject::CellsCollision( int _newX, int _newY, BaseObject* _other ) cons
 	for ( int a = 0; a < ( int )shape.size(); ++a )
 		for ( int b = 0; b < ( int )_other->GetShape().size(); ++b )
 			if ( ( ( _newX + shape[ a ].oX ) == ( _other->GetX() + _other->GetShape()[ b ].oX ) ) &&
-				 ( ( _newY + shape[ a ].oY ) == ( _other->GetY() + _other->GetShape()[ b ].oY ) ) )
+				( ( _newY + shape[ a ].oY ) == ( _other->GetY() + _other->GetShape()[ b ].oY ) ) )
 				return true;
 	return false;
 }
@@ -183,7 +183,7 @@ bool BaseObject::CellsCollision( int _newX, int _newY, BaseObject* _other ) cons
 	for ( int a = 0; a < shape.getSize(); ++a )
 		for ( int b = 0; b < _other->GetShape().getSize(); ++b )
 			if ( ( ( _newX + shape[ a ].oX ) == ( _other->GetX() + _other->GetShape()[ b ].oX ) ) &&
-				 ( ( _newY + shape[ a ].oY ) == ( _other->GetY() + _other->GetShape()[ b ].oY ) ) )
+				( ( _newY + shape[ a ].oY ) == ( _other->GetY() + _other->GetShape()[ b ].oY ) ) )
 				return true;
 	return false;
 }

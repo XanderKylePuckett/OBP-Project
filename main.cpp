@@ -47,7 +47,7 @@ int main( int argc, char* argv[ ] )
 			std::cout << std::flush << std::endl;
 			system( "pause" );
 			testDList.erase( -3 );
-}
+		}
 		catch ( std::exception e )
 		{
 			std::cerr << "\n\n" << "exception caught: " << e.what() << std::endl;

@@ -98,3 +98,5 @@ Name: billybob	Score: 12630	Difficulty: 0
 Name: Player	Score: 4293	Difficulty: 0
 Name: Player	Score: 0	Difficulty: 0
 Name: Player	Score: 0	Difficulty: 0
+Name: Xander	Score: 414	Difficulty: 0
+Name: Xanderr	Score: 62955	Difficulty: 0

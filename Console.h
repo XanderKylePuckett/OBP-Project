@@ -3,7 +3,7 @@
 namespace System
 {
 
-/// Colors - can be used as Foreground or Background
+	/// Colors - can be used as Foreground or Background
 	enum ConsoleColor
 	{
 		Black = 0,

@@ -85,14 +85,14 @@ void MenuState::Render( void ) const
 		if ( i == currItem )
 		{
 			System::Console::SetCursorPosition( ( System::Console::WindowWidth() >> 1 ) - 11,
-												( System::Console::WindowHeight() >> 1 ) - 3 + i );
+				( System::Console::WindowHeight() >> 1 ) - 3 + i );
 			System::Console::ForegroundColor( ( WORD )System::ConsoleColor::MENU_SELECTEDCOLOR );
 			std::cout << "---> ";
 		}
 		else
 		{
 			System::Console::SetCursorPosition( ( System::Console::WindowWidth() >> 1 ) - 6,
-												( System::Console::WindowHeight() >> 1 ) - 3 + i );
+				( System::Console::WindowHeight() >> 1 ) - 3 + i );
 			System::Console::ForegroundColor( ( WORD )System::ConsoleColor::MENU_ITEMCOLOR );
 		}
 		std::cout << menuItem[ i ];

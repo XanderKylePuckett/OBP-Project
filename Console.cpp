@@ -81,7 +81,7 @@ namespace System
 	{
 		CONSOLE_CURSOR_INFO curs;
 		GetConsoleCursorInfo( out, &curs );
-		if ( TRUE == curs.bVisible  && visible || FALSE == curs.bVisible  && !visible ) return;
+		if ( TRUE == curs.bVisible  && visible || FALSE == curs.bVisible && !visible ) return;
 		curs.bVisible = ( visible ) ? TRUE : FALSE;
 		SetConsoleCursorInfo( out, &curs );
 	}
